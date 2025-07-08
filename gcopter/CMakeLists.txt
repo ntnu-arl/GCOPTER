@@ -32,3 +32,9 @@ target_link_libraries(global_planning
   ${OMPL_LIBRARIES}
   ${catkin_LIBRARIES}
 )
+
+add_executable(traj_smoother src/traj_smoother.cpp)
+
+target_link_libraries(traj_smoother
+  ${catkin_LIBRARIES}
+)
